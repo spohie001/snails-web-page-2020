@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="strona_projekt_XML_Schema.xsd">
+    <informacje>
+        <temat>ogolne</temat>
+        <temat>ksztalt</temat>
+        <temat>roznorodnosc</temat>
+        <temat>muszle</temat>
+    </informacje>
+
+    <links>
+        <link source="https://en.wikipedia.org/wiki/Sea_snail#Anatomy">Wikipedia</link>
+        <link source="https://ciekawe.org/2016/06/14/niezwykle-morskie-slimaki">ciekawe.org</link>
+        <link source="https://wideo.wp.pl/maly-smok-niezwykle-morskie-slimaki-6510040777369729v">wideo.wp.pl</link>
+    </links>
+
+</content>

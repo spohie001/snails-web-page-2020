@@ -1,0 +1,288 @@
+#wrapper
+{
+    width: 100%;
+}
+#zegar
+{
+
+    margin-left: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 40px;
+}
+
+#dance
+{
+    align:center;
+}
+#pradziwosc
+{
+    
+    z-index: -1000;
+}
+body
+{    
+    background-image: linear-gradient(rgb(111, 200, 223) ,rgb(200, 216, 107));
+    background-repeat: no-repeat;
+    background-size: cover;
+	color: white;
+	margin: 0;
+	padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family:"Comic Sans MS";
+    
+}
+header
+{
+    padding: 10px  0;
+    opacity:0.7;
+    text-align:center;
+    height:100px;	 
+	margin: 0 0 10px 0; 
+}
+.content::first-line
+{
+    color: teal;
+}
+.logo
+{
+    width: 600px;
+    font-size: 48px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 20px;
+}
+svg
+{  
+    fill:rgb(215, 240, 229);
+    stroke:rgb(156, 171, 179);
+    stroke-width:5;
+   margin-left: auto;
+   margin-right: auto;
+    z-index: -1;
+    animation-name: color_change;
+    animation-duration: 10s;
+
+}
+
+@keyframes color_change {
+    0%   {fill: rgb(0, 0, 0);}
+    25%  {fill: rgb(56, 78, 69);}
+    50%  {fill: rgb(164, 177, 172);}
+    100% {fill: rgb(215, 240, 229);}
+
+}
+.content
+{   
+    min-height: 500px;
+    font-size: large;
+    width: 1000px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:10px;
+	color:#FFF;
+    text-align:justify;
+	
+}
+.content1
+{   
+    min-height: 500px;
+    font-size: large;
+    width: 700px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:10px;
+	color:#FFF;
+    text-align:justify;
+	
+}
+
+tr, td, th
+		{	
+            border: 1px solid white;
+            padding: 7px;
+            text-align: center;
+		}	
+table.one
+		{
+            
+            border: 10px dashed white;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+table
+{
+    background-color: #1b7566;
+    border: 10px dashed white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+            
+.right
+{
+    float: right;
+}
+.img1
+{
+    float: left;
+    border: 5px solid white;
+    padding: 5px;
+    margin-right: 10px;
+}
+.nav
+{
+    text-align: center;
+    background-color: #1b7566;
+    opacity: 0.8;
+    width:100%; 
+	
+}
+
+ol > li > ul
+{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    height: 40px;
+    z-index: 100;
+    display: none;
+}
+ol > li > ul > li
+{
+    background-color: #1b7566; 
+    position: relative;
+    z-index: 100;
+    border-top: dashed #1f2b35
+}
+
+ol
+{
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+ol a
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+ol > li
+{
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: dashed #1f2b35;
+}
+ol >li:first-child
+{
+    border-left: dashed #1f2b35;
+}
+
+.sticky
+{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+footer
+{
+    clear: both;
+    height:50px;
+	background:#1f2b35;
+	color:#FFF;
+	text-align:center;
+	margin-top:10px;
+	padding:5px;
+}
+.active
+{
+    border: dashed white;
+}
+div.gallery {
+    margin: 10px;
+    border: 10px solid white;
+    padding: 5px;
+    float: left;
+    width: 150px;
+    height: 160px;
+  }
+  
+ 
+  
+  div.gallery img {
+    width: 150px;
+    height: 160px;
+  }
+   
+  div.gallery:hover {
+    border: 10px dashed white;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  .galeria
+  {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  @media only screen and (max-width: 1000px) {
+      
+      body{
+          background-image: -o-linear-gradient(red,blue);
+          height: auto;
+          margin: 10px;
+        }
+        table{ display:none;
+        }
+        div.gallery
+        {
+            clear: both;
+            padding: 70px;
+            position: relative;
+            margin-right: ab;
+            margin-left: auto;
+        }
+        
+        .nav
+        {
+            float:left;
+            
+        }
+        ol
+        {
+            display: block;
+        }
+
+        #zegar
+        {
+            display:none;
+            float:left;
+        }
+
+        #content
+        {
+            float:left;
+        }
+        .content
+        {
+            width: auto;
+        }
+
+  }

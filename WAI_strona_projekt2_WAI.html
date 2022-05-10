@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang=pl>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Morskie ślimaki zachwycą każdego!</title>
+        <link rel="stylesheet" href="WAI_strona_projekt_CSS_WAI.css">
+
+        <script>
+         
+                function odliczanie()
+                {
+                       var dzisiaj = new Date();
+       
+                   var godzina = dzisiaj.getHours();
+                   if(godzina<10) godzina="0"+godzina;
+       
+                   var minuta = dzisiaj.getMinutes();
+                   if(minuta<10) minuta="0"+minuta;
+                   
+                   var sekunda = dzisiaj.getSeconds();
+                   if(sekunda<10) sekunda="0"+sekunda;
+                   
+       
+                   document.getElementById("zegar").innerHTML =
+                    godzina+":"+minuta+":"+sekunda;
+       
+                    setTimeout("odliczanie()",1000);
+               } 
+
+               
+               </script>
+
+               <noscript>
+                        <style>
+                                #znika
+                                {
+                                        display: none;
+                                }
+                        </style>
+
+               </noscript>
+    </head>
+    <body onload="odliczanie();">
+<!----------------------------------------------------------------------------------------------------->        
+        <div id="wrapper">
+                <header>
+                        
+                        <div class="logo">
+                                <img src="Gary_the_Snail_picture_logo.png" width="50" height="50" alt="Gacuś">
+                                <span style="text-decoration: line-through solid red">Nie</span> bądź mięczak
+                        </div>
+                </header>
+        <!----------------------------------------------------------------------------------------------------->
+                 <div class="nav">
+                         <ol>
+                                <li><a href="WAI_strona_projekt_WAI.html">Strona główna</a></li>
+                                <li><a class="active" href="WAI_strona_projekt2_WAI.html">Ślimaczki</a></li>
+                                <li><a href="WAI_strona_projekt3_WAI.html">Ankieta</a></li>
+                         </ol>
+               
+                </div >
+        <!----------------------------------------------------------------------------------------------------->  
+        <div id="zegar"></div>
+        <!----------------------------------------------------------------------------------------------------->              
+                  <div class="content">
+                        
+                        <p><button id="znika" onclick="clickCounter()" type="button">Pomnóż miłość do ślimaków</button></p>
+
+                        <div id="result"></div>
+
+
+                    <div class="galeria">     
+                       <div class="gallery">
+                        
+                                <img src="img/sea_sheep.jpg" alt="Ślimak" width="600" height="400">
+                             
+                              <div class="desc">Morska Owieczka</div>
+                       </div>
+
+                       <div class="gallery">
+                        
+                                <img src="img/Phyllodesmium_Poindimiei.jpg" alt="Ślimak" width="600" height="400">
+                          
+                              <div class="desc">Phyllodesmium Poindimiei</div>
+                       </div>
+
+                       <div class="gallery">
+                      
+                                <img src="img/Elysia_Chlorotica.jpg" alt="Ślimak" width="600" height="400">
+                           
+                              <div class="desc">Elysia Chlorotica</div>
+                       </div>
+
+                       <div class="gallery">
+                       
+                                <img src="img/Glaucus_Atlanticus.jpg" alt="Ślimak" width="600" height="400">
+                        
+                              <div class="desc">Glaucus Atlanticus</div>
+                       </div>
+
+                       <div class="gallery">
+                       
+                                <img src="img/Elysia_Crispata.jpg" alt="Ślimak" width="600" height="400">
+                         
+                              <div class="desc">Elysia Crispata</div>
+                       </div>
+                      
+                       <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                </div> 
+               
+                <div>
+			<table class="one">
+			<tr>
+			<th>Ślimaczek</th>
+			<th>Wygląd</th>
+			</tr>
+			<tr>
+			<td>Morska Owieczka</td>
+			<td>Hybryda owcy, królika i liścia</td>
+			</tr><tr>
+			<td>Phyllodesmium Poindimiei</td>
+			<td>Praktycznie same różowe macki</td>
+                        </tr><tr>
+                                <td>Elysia Chlorotica</td>
+                                <td>Listek</td>
+                                </tr><tr>
+                                        <td>Glaucus Atlanticus</td>
+                                        <td>Z góry wygląda jak latający smok</td>
+                                        </tr><tr>
+                                                <td>Elysia Crispata</td>
+                                                <td>Połączenie struktury mózgu i kolorowej owcy</td>
+                                                </tr>
+                        
+                        </table>
+                        <br> <br> <br> <br> 
+			</div>
+                        
+                        
+        
+                  </div>
+        <!----------------------------------------------------------------------------------------------------->
+                <footer>
+        
+        Copyrights &copy; Zofia Sosińska 2020
+                </footer>
+
+        </div>
+<!----------------------------------------------------------------------------------------------------->        
+ <script src="jquery-3.5.1.js"></script>
+	
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+        });
+        
+        function clickCounter() {
+  if(typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Pomnożyłeś swoją miłość do ślimaczków " + sessionStorage.clickcount + " razy! <3";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+	
+</script>
+
+        </body>
+</html>
+
+
